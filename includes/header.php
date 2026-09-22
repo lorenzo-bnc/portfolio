@@ -7,7 +7,6 @@
 <meta name="copyright" content="Lorenzo BUONOCORE <?= date('Y') ?>">
 
 <!-- HEADER CLASSIQUE -->
-<title>Lorenzo BUONOCORE | Portfolio</title>
 <link rel="stylesheet" href="./CSS/styles.css">
 <link rel="icon" href="./IMG/logo.jpg">
 
