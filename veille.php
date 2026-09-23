@@ -68,8 +68,8 @@
                     }
                     
                     echo <<<HTML
-                        <a href="{$unFavori['link']}" target="_blank">
-                        <div class="comp-card"">
+                        <a href="{$unFavori['link']}" target="_blank" class="comp-card">
+                        <div class="comp-card">
                             <h3>{$titre}</h3>
 
                             <img src="{$unFavori['image_url']}" alt="Image KMS" class="veille">

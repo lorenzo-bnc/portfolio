@@ -123,5 +123,42 @@
         "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
         "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
         "duplicate": false
+    },
+    {
+        "article_id": "79dbadb583d44f4863f05eedd22df9f5",
+        "link": "https:\/\/www.bundle.app\/en\/finance\/warner-music-wmg-bets-its-ai-truce-with-suno-can-turn-into-a-new-revenue-line-D1BEF69D-7498-438C-9E60-92BFC0CE5094",
+        "title": "Warner Music (WMG) Bets its AI Truce with Suno Can Turn into a New Revenue Line",
+        "description": null,
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": null,
+        "creator": [
+            "alphastreet"
+        ],
+        "language": "english",
+        "country": [
+            "united states of america"
+        ],
+        "category": [
+            "top",
+            "business"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-09-21 11:44:08",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-09-22 08:52:10",
+        "image_url": "https:\/\/static.bundle.app\/news\/4b440851-40cd-5e7d-ac77-31457b413223.jpg",
+        "video_url": null,
+        "source_id": "bundle_app",
+        "source_name": "Bundle",
+        "source_priority": 1204723,
+        "source_url": "https:\/\/www.bundle.app",
+        "source_icon": "https:\/\/i.newsdata.io\/bundle_app.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": true
     }
 ]
