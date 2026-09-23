@@ -4,8 +4,9 @@
 
     $articlesFavoris = json_decode(file_get_contents('DB/fav_news.json'), true);
 
-    if (isset($_POST["article_id"])) {
+    if (isset($_POST["type"])) {
         $fichierFav = 'DB/fav_news.json';
+        $type = $_POST["type"];
         $favorisExistants = [];
 
         if (file_exists($fichierFav)) {
@@ -16,22 +17,39 @@
         }
 
         $article_id = $_POST["article_id"];
-        foreach($articlesJournalier as $unArticle){
-            if($unArticle["article_id"] == $article_id){
-                $dejaFavori = false;
 
-                foreach($favorisExistants as $unFavori){
-                    if($unArticle["article_id"] == $unFavori["article_id"]){
-                        $dejaFavori = true;
+        if ($type === "ajouterFav") {
+            foreach ($articlesJournalier as $unArticle) {
+                if ($unArticle["article_id"] === $article_id) {
+                    $dejaFavori = false;
+                    
+                    foreach ($favorisExistants as $unFavori) {
+                        if ($unFavori["article_id"] === $article_id) {
+                            $dejaFavori = true;
+                            break;
+                        }
                     }
-                }
 
-                if(!$dejaFavori){
-                    $favorisExistants[] = $unArticle;
+                    if (!$dejaFavori) {
+                        $favorisExistants[] = $unArticle;
+                        file_put_contents($fichierFav, json_encode($favorisExistants, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+                    }
+                    break;
+                }
+            }
+        } 
+        else if ($type === "supprimerFav") {
+            foreach ($favorisExistants as $index => $unFavori) {
+                if ($unFavori["article_id"] === $article_id) {
+                    unset($favorisExistants[$index]);
+
+                    $favorisExistants = array_values($favorisExistants);
                     file_put_contents($fichierFav, json_encode($favorisExistants, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+                    break;
                 }
             }
         }
+        header("Location: veille.php");
     }
 
     function ellipserTexte(string $saisie, int $nb=100){
@@ -62,6 +80,7 @@
                     $description = "";
                     $titre = ellipserTexte($unFavori['title'], 50);
                     $article_id = $unFavori['article_id'];
+                    $pubier_le = date("d/m/Y h:i:s", strtotime($unFavori['pubDate']));
 
                     if(is_string($unFavori['description'])){
                         $description = ellipserTexte($unFavori['description']);
@@ -69,14 +88,22 @@
                     
                     echo <<<HTML
                         <a href="{$unFavori['link']}" target="_blank" class="comp-card">
-                        <div class="comp-card">
-                            <h3>{$titre}</h3>
+                        <div>
+                            <div class="head-veille">
+                                <h3>{$titre}</h3>
+                                <form method="post">
+                                    <input type="hidden" value="supprimerFav" name="type"/>
+                                    <input type="hidden" value="{$article_id}" name="article_id"/>
+                                    <button type="submit" class="fav"><i class="fa-regular fa-trash-can"></i></button>
+                                </form>
+                            </div>
 
                             <img src="{$unFavori['image_url']}" alt="Image KMS" class="veille">
                             <div class="footer-veille"git branch -M main>
                                 <p class="veille">{$description}</p>
                                 <hr>
                                 <p class="company">{$unFavori['source_name']}</p>
+                                <small>{$pubier_le}</small>
                             </div>
                         </div>
                         </a>
@@ -92,28 +119,33 @@
                     $description = "";
                     $titre = ellipserTexte($unArticle['title'], 50);
                     $article_id = $unArticle['article_id'];
+                    $pubier_le = date("d/m/Y h:i:s", strtotime($unArticle['pubDate']));
 
                     if(is_string($unArticle['description'])){
                         $description = ellipserTexte($unArticle['description']);
                     }
                     
                     echo <<<HTML
-                        <div class="comp-card"">
-                            <div class="head-veille">
-                                <h3>{$titre}</h3>
-                                <form method="post">
-                                    <input type="hidden" value="{$article_id}" name="article_id"/>
-                                    <button type="submit"><i class="fa-regular fa-heart"></i></button>
-                                </form>
+                        <a href="{$unArticle['link']}" target="_blank" class="comp-card">
+                            <div>
+                                <div class="head-veille">
+                                    <h3>{$titre}</h3>
+                                    <form method="post">
+                                        <input type="hidden" value="ajouterFav" name="type"/>
+                                        <input type="hidden" value="{$article_id}" name="article_id"/>
+                                        <button type="submit" class="fav"><i class="fa-regular fa-heart"></i></button>
+                                    </form>
+                                </div>
+
+                                <img src="{$unArticle['image_url']}" alt="Image KMS" class="veille">
+                                <div class="footer-veille">
+                                    <p class="veille">{$description}</p>
+                                    <hr>
+                                    <p class="company">{$unArticle['source_name']}</p>
+                                    <small>{$pubier_le}</small>
+                                </div>
                             </div>
-                            
-                            <img src="{$unArticle['image_url']}" alt="Image KMS" class="veille">
-                            <div class="footer-veille">
-                                <p class="veille">{$description}</p>
-                                <hr>
-                                <p class="company">{$unArticle['source_name']}</p>
-                            </div>
-                        </div>
+                        </a>
                     HTML;
                 }
             ?>

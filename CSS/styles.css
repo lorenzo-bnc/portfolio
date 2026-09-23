@@ -44,6 +44,41 @@ canvas {
     pointer-events: none;
 }
 
+
+input, button[type=submit]{
+    border: 1px solid gainsboro;
+    border-radius: 50px;
+
+    padding: 10px;
+    margin: 15px;
+    margin-top: 10px;
+
+    transition: 0.5s;
+}
+
+input:hover, button[type=submit]:hover {
+    scale: 1.03;
+
+    transition: 0.5s;
+}
+
+
+textarea {
+    border: 1px solid gainsboro;
+
+    padding: 15px;
+    margin: 15px;
+    margin-top: 10px;
+
+    transition: 0.5s;
+}
+
+textarea:hover {
+    scale: 1.03;
+
+    transition: 0.5s;
+}
+
 /* NAVBAR */
 
 
@@ -258,7 +293,7 @@ div#competences {
     width: 100%;
 }
 
-div.comp-card{
+.comp-card{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -272,7 +307,7 @@ div.comp-card{
     transition: 0.5s;
 }
 
-div.comp-card:hover {
+.comp-card:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.284);
     scale: 1.03;
 
@@ -355,13 +390,13 @@ main#veille{
     flex-direction: column;
 }
 
-
 div.veille {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     grid-auto-rows: minmax(100px, auto);
 
+    z-index: 20;
     margin: 50px;
     margin-top: 55px;
     width: 100%;
@@ -380,6 +415,7 @@ img.veille{
 
 p.veille{
     font-size: 12px;
+    min-height: 43px;
 }
 
 div.head-veille{
@@ -389,6 +425,29 @@ div.head-veille{
 
 div.footer-veille{
     min-width: 100%;
+}
+
+button.fav {
+    border-radius: 50px;
+    border: 1px solid #ce3a3a;
+    background-color: #ff000075;
+    color: #ce3a3a;
+    font-size: 18px;
+
+    margin: 0;
+    margin-left: 10px;
+    
+    padding: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    transition: 0.5s;
+}
+
+button.fav:hover {
+    scale: 1.08;
+    background-color: #ff00003c;
+    transition: 0.5s;
 }
 
 /* CONTACT */
@@ -413,41 +472,6 @@ form#contact:hover {
 
     transition: 0.5s;
 }
-
-input, button[type=submit]{
-    border: 1px solid gainsboro;
-    border-radius: 50px;
-
-    padding: 10px;
-    margin: 15px;
-    margin-top: 10px;
-
-    transition: 0.5s;
-}
-
-input:hover, button[type=submit]:hover {
-    scale: 1.03;
-
-    transition: 0.5s;
-}
-
-
-textarea {
-    border: 1px solid gainsboro;
-
-    padding: 15px;
-    margin: 15px;
-    margin-top: 10px;
-
-    transition: 0.5s;
-}
-
-textarea:hover {
-    scale: 1.03;
-
-    transition: 0.5s;
-}
-
 /* FOOTER */
 
 footer{
