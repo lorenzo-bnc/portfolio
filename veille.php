@@ -79,7 +79,32 @@
         <h1 class="info">Mon sujet de veille</h1>
         <h3 class="info">L'évolution de l'IA dans la création musicale</h3>
 
-        
+        <div class="section-veille">
+            <h1 class="titre">
+                <i class="fa-solid fa-compact-disc"></i>
+                Pourquoi ce sujet ?
+            </h1>
+            <div>
+                <p>
+                    L’intelligence artificielle prend une place de plus en plus importante dans le domaine de la musique. Elle permet aujourd’hui de générer des mélodies, des paroles, des voix ou encore des morceaux complets à partir de simples instructions.
+                    </br></br>
+                    J’ai choisi ce sujet car l’IA transforme progressivement la manière dont la musique peut être créée et utilisée. Cette évolution soulève également plusieurs questions concernant la créativité, les droits d’auteur et la place de l’artiste, tous impactés par la technologie.
+                </p>
+            </div>
+        </div>
+
+        <div class="section-veille">
+            <h1 class="titre">
+                <i class="fa-solid fa-robot"></i>
+                Qu’est-ce que l’IA musicale ?
+            </h1>
+            <div>
+                <p>
+                    L’IA musicale désigne l’utilisation de technologies d’intelligence artificielle pour assister ou automatiser certaines étapes de la création musicale. Elle peut notamment analyser des morceaux existants, générer du contenu musical ou modifier une voix et un instrument.
+                </p>
+            </div>
+        </div>
+         
         <h1 class="info">Mon outil de curation</h1>
         <h3 class="info">Articles favoris</h1>
         <div class="veille">

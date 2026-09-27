@@ -13,7 +13,7 @@
     <header>
         <?php require_once("./includes/navbar.php"); ?>
     </header>
-    <main>
+    <main id="main">
         <div id="competences">
             <div class="comp-card" onclick="openModal(1)">
                 <h3>C1 - Mettre à disposition des utilisateurs un service informatique</h3>

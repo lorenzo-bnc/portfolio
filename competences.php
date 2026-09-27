@@ -13,7 +13,7 @@
     <header>
         <?php require_once("./includes/navbar.php"); ?>
     </header>
-    <main>
+    <main id="main">
         <div id="competences">
             <div class="comp-card" onclick="openModal(1)">
                 <h3>C3 - Développer la présence en ligne de l’organisation</h3>
@@ -37,31 +37,51 @@
     </main>
     <div class="modal" id="modal-1">
         <div class="head-modal">
-            <h3>C1 - Mettre à disposition des utilisateurs un service informatique</h3>
+            <h3>C3 - Développer la présence en ligne de l’organisation</h3>
             <button class="close" onclick="closeModal(1)">×</button>
         </div>
-        <img src="IMG/template/template_250.png" alt="Template 250" width="150">
+
+        <h3>Page Tableau de bord organisateur</h3>
+
+        <p>KPIs principales</p>
+        <div class="carousel">
+            <img src="IMG/comp/C3/1.png" alt="KPI principales">
+            <img src="IMG/comp/C3/max_gain_nb_event.png" alt="Code 1">
+            <img src="IMG/comp/C3/nb_epreuves.png" alt="Code 2">
+            <img src="IMG/comp/C3/taux_inscrits.png" alt="Code 3">
+        </div>
         <div>
-            <p>Développement d’un espace privé regroupant statistiques et outils de gestion</p>
+            <p>Développement de l'Espace Organisateur du site KMS : ajout de statistiques visuelles, de KPIs et d'une carte interactive pour permettre aux organisateurs de valoriser et suivre leurs événements en ligne.</p>
             <hr>
             <div class="footer-modal">
                 <p class="company">Compétence travaillé chez KMS</p>
-                <a href="./DOC/FDS_C3_C4.pdf" class="fds-button">Fiche de situation</a>
+                <a href="./DOC/FDS_C3_C4.pdf" class="fds-button" target="_blank">Fiche de situation</a>
             </div>
         </div>
     </div>
     <div class="modal" id="modal-2">
         <div class="head-modal">
-            <h3>C2 - Développer la présence en ligne de l’organisation</h3>
+            <h3>C4 - Travailler en mode projet</h3>
             <button class="close" onclick="closeModal(2)">×</button>
         </div>
-        <img src="IMG/template/template_250.png" alt="Template 250" width="150">
+        
+        <div class="carousel">
+            <img src="IMG/template/template_250.png" alt="Template 250" width="100%">
+            <img src="IMG/template/template_250.png" alt="Template 250" width="100%">
+            <img src="IMG/template/template_250.png" alt="Template 250" width="100%">
+            <img src="IMG/template/template_250.png" alt="Template 250" width="100%">
+            <img src="IMG/template/template_250.png" alt="Template 250" width="100%">
+            <img src="IMG/template/template_250.png" alt="Template 250" width="100%">
+            <img src="IMG/template/template_250.png" alt="Template 250" width="100%">
+            <img src="IMG/template/template_250.png" alt="Template 250" width="100%">
+        </div>
+        
         <div>
             <p>Développement d’un espace privé regroupant statistiques et outils de gestion</p>
             <hr>
             <div class="footer-modal">
                 <p class="company">Compétence travaillé chez KMS</p>
-                <a href="./DOC/FDS_C3_C4.pdf" class="fds-button">Fiche de situation</a>
+                <a href="./DOC/FDS_C3_C4.pdf" class="fds-button" target="_blank">Fiche de situation</a>
             </div>
         </div>
     </div>

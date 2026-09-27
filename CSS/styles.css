@@ -348,6 +348,25 @@ img.competence{
     border-radius: 15px;
 }
 
+.carousel {
+    display: flex;
+    gap: 15px;
+
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.carousel > * {
+    width: 49%;
+
+    border: 1px solid;
+    border-radius: 15px;
+    scroll-snap-align: start;
+}
+
 small{
     color: var(--color-muted);
 }
@@ -370,12 +389,12 @@ div.modal {
     z-index: 40;
 
     display: none;
+    gap: 5px;
     flex-direction: column;
     
     background-color: var(--color-primary);
 
     margin: 4rem;
-    margin-top: 14rem;
     padding: 15px;
     border-radius: 15px;
     border: 1px solid gainsboro;
@@ -436,9 +455,24 @@ button.close:hover {
 
 main#veille{
     height: auto;
-    margin-top: 9rem;
+    margin-top: 11rem;
 
     flex-direction: column;
+}
+
+div.section-veille{
+    width: 100%;
+
+    padding: 15px;
+    margin: 40px;
+
+    background-color: var(--color-primary);
+    border-radius: 15px;
+    border: 1px solid gainsboro;
+}
+
+h1.titre {
+    margin-bottom: 10px;
 }
 
 div.veille {
@@ -448,8 +482,7 @@ div.veille {
     grid-auto-rows: minmax(100px, auto);
 
     z-index: 20;
-    margin: 50px;
-    margin-top: 55px;
+    margin: 40px;
     width: 100%;
 }
 
@@ -560,11 +593,30 @@ footer{
         gap: 15px;
     }
 
+    main{
+        margin-top: 7rem;
+    }
+
+    div#section {
+        flex-direction: column;
+    }
+    div#card {
+        flex-direction: column;
+    }
+    div#me {
+        flex-direction: column;
+    }
+
     div#competences{
         grid-template-columns: repeat(1, 1fr);
         margin: 0;
     }
+
+    main#veille{
+        margin-top: 9rem;
+    }
     div.veille {
         grid-template-columns: repeat(1, 1fr);
     }
+
 }
