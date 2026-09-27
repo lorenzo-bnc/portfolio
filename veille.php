@@ -4,6 +4,10 @@
 
     $articlesFavoris = json_decode(file_get_contents('DB/fav_news.json'), true);
 
+    usort($articlesFavoris, function ($actuel, $precedent) {
+        return strtotime($precedent['pubDate']) - strtotime($actuel['pubDate']);
+    });
+
     if (isset($_POST["type"])) {
         $fichierFav = 'DB/fav_news.json';
         $type = $_POST["type"];
@@ -11,6 +15,7 @@
 
         if (file_exists($fichierFav)) {
             $contenu = file_get_contents($fichierFav);
+
             if (!empty($contenu)) {
                 $favorisExistants = json_decode($contenu, true);
             }
@@ -22,7 +27,7 @@
             foreach ($articlesJournalier as $unArticle) {
                 if ($unArticle["article_id"] === $article_id) {
                     $dejaFavori = false;
-                    
+
                     foreach ($favorisExistants as $unFavori) {
                         if ($unFavori["article_id"] === $article_id) {
                             $dejaFavori = true;
@@ -71,16 +76,19 @@
         <?php require_once("./includes/navbar.php"); ?>
     </header>
     <main id="veille">
+        <h1 class="info">Mon sujet de veille</h1>
         <h3 class="info">L'évolution de l'IA dans la création musicale</h3>
 
-        <h1 class="info">Articles favoris</h1>
+        
+        <h1 class="info">Mon outil de curation</h1>
+        <h3 class="info">Articles favoris</h1>
         <div class="veille">
             <?php
                 foreach($articlesFavoris as $unFavori){
                     $description = "";
                     $titre = ellipserTexte($unFavori['title'], 50);
                     $article_id = $unFavori['article_id'];
-                    $pubier_le = date("d/m/Y h:i:s", strtotime($unFavori['pubDate']));
+                    $pubier_le = date("d M Y à h\hi", strtotime($unFavori['pubDate']));
 
                     if(is_string($unFavori['description'])){
                         $description = ellipserTexte($unFavori['description']);
@@ -112,14 +120,14 @@
             ?>
         </div>
 
-        <h1 class="info">Articles journaliers</h1>
+        <h3 class="info">Articles journaliers</h1>
         <div class="veille">
             <?php
                 foreach($articlesJournalier as $unArticle){
                     $description = "";
                     $titre = ellipserTexte($unArticle['title'], 50);
                     $article_id = $unArticle['article_id'];
-                    $pubier_le = date("d/m/Y h:i:s", strtotime($unArticle['pubDate']));
+                    $pubier_le = date("d M Y à h\hi", strtotime($unArticle['pubDate']));
 
                     if(is_string($unArticle['description'])){
                         $description = ellipserTexte($unArticle['description']);

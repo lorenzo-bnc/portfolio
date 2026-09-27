@@ -160,5 +160,94 @@
         "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
         "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
         "duplicate": true
+    },
+    {
+        "article_id": "88ebd2fb02a76514c876908478107428",
+        "link": "https:\/\/us.headtopics.com\/news\/universal-and-sony-sue-suno-over-new-ai-model-citing-88025971",
+        "title": "Universal and Sony Sue Suno Over New AI Model, Citing Copyright Theft",
+        "description": "Universal Music Group and Sony Music sue Suno over its new AI model, alleging wholesale theft of copyrighted music and seeking to resolve fair use questions.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+            "warner music group",
+            "artificial intelligence",
+            "fair use",
+            "copyright lawsuit",
+            "entertainment",
+            "sony music",
+            "suno",
+            "universal music group"
+        ],
+        "creator": [
+            "headtopics.com"
+        ],
+        "language": "english",
+        "country": [
+            "united states of america"
+        ],
+        "category": [
+            "top",
+            "business"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-09-22 20:06:00",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-09-22 20:07:40",
+        "image_url": "https:\/\/i.headtopics.com\/images\/2026\/9\/22\/billboard\/universal-and-sony-sue-suno-over-new-ai-model-citi-universal-and-sony-sue-suno-over-new-ai-model-citi-1F0261E27D9E5DD38E77B134D8354469-16x9.webp",
+        "video_url": null,
+        "source_id": "headtopics",
+        "source_name": "Headtopics",
+        "source_priority": 43039,
+        "source_url": "https:\/\/headtopics.com",
+        "source_icon": "https:\/\/i.newsdata.io\/headtopics.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+    },
+    {
+        "article_id": "548f5a0f314c2af054529eda9962ad3e",
+        "link": "https:\/\/www.theverge.com\/ai-artificial-intelligence\/1000758\/suno-sony-umg-lawsuit-ai-music",
+        "title": "Sony and UMG are suing Suno again",
+        "description": "Sony and Universal Music Group filed yet another suit against Suno. The labels claim its new v6 model still infringes on their copyrights because it's trained on user outputs from previous models, which were themselves trained on unlicensed music ripped from YouTube and other sources. Sony and UMG are notable holdouts who did not sign […]",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+            "ai",
+            "law",
+            "policy",
+            "music",
+            "news",
+            "entertainment"
+        ],
+        "creator": [
+            "terrence o’brien"
+        ],
+        "language": "english",
+        "country": [
+            "united states of america"
+        ],
+        "category": [
+            "business"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-09-25 15:51:56",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-09-25 16:06:07",
+        "image_url": "https:\/\/platform.theverge.com\/wp-content\/uploads\/sites\/2\/2025\/09\/STKB368_SUNO_C.jpg?quality=90&strip=all&crop=0,10.732984293194,100,78.534031413613",
+        "video_url": null,
+        "source_id": "theverge",
+        "source_name": "The Verge",
+        "source_priority": 26151,
+        "source_url": "https:\/\/www.theverge.com",
+        "source_icon": "https:\/\/i.newsdata.io\/theverge.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
     }
 ]

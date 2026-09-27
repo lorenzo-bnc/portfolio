@@ -44,7 +44,6 @@ canvas {
     pointer-events: none;
 }
 
-
 input, button[type=submit]{
     border: 1px solid gainsboro;
     border-radius: 50px;
@@ -61,7 +60,6 @@ input:hover, button[type=submit]:hover {
 
     transition: 0.5s;
 }
-
 
 textarea {
     border: 1px solid gainsboro;
@@ -80,7 +78,6 @@ textarea:hover {
 }
 
 /* NAVBAR */
-
 
 header{
     position: fixed;
@@ -114,8 +111,7 @@ nav>ul>li {
     border-radius: 50px;
     padding: 10px;
 }
-
-nav>ul>li.active {
+.active {
     box-shadow: 0 0 5px #0000006b;
     background-color: #ffffff85;
 }
@@ -125,12 +121,41 @@ nav>ul>li>a {
     color: var(--color-text);
 }
 
-button#mobile{
+button#mobile {
     margin-right: 8px;
 
     display: none;
     border: none;
     background: none;
+
+    transition: 0.25s;
+}
+
+button#mobile:active {
+    scale: 1.2;
+
+    transition: 0.25s;
+}
+
+div#mobile-nav {
+    position: fixed;
+    right: 28px;
+
+    display:none;
+    width: fit-content;
+
+    padding: 10px;
+
+    background-color: #ffffff94;
+    border-radius: 13px;
+    border: 1px solid var(--color-primary);
+    backdrop-filter: blur(15px);
+}
+
+a.mobile{
+    padding: 10px;
+
+    border-radius: 50px;
 }
 
 /* INDEX */
@@ -361,6 +386,32 @@ div.modal {
     justify-content: space-between;
 }
 
+.footer-modal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fds-button{
+    border-radius: 50px;
+    border: 1px solid #823ace;
+    background-color: #9a00ff75;
+    color: #823ace;
+    font-size: 18px;
+
+    padding: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    transition: 0.5s;
+}
+
+.fds-button:hover{
+    scale: 1.08;
+    background-color: #8400FF3c;
+    transition: 0.5s;
+}
+
 button.close {
     border-radius: 50px;
     border: 1px solid #ce3a3a;
@@ -492,18 +543,29 @@ footer{
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
+    nav{
+        margin-bottom: 5px;
+    }
     ul#desktop{
         display: none;
+    }
+    nav>h3 {
+        font-size: 15px;
     }
     button#mobile{
         display: flex;
     }
-
-    div.veille {
-        grid-template-columns: repeat(1, 1fr);
+    div#mobile-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
 
-    nav>h3 {
-        font-size: 15px;
+    div#competences{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+    }
+    div.veille {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
