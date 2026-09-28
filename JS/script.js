@@ -23,9 +23,12 @@ function openModal(id){
     const modal = document.getElementById('modal-'+id)
     const canvas = document.getElementById('canvas')
     const main = document.getElementById('main')
+
     modal.style.display = "flex"
     canvas.style.display = "flex"
     main.style.pointerEvents = "none"
+
+    document.body.classList.add('modal-open');
 }
 
 function closeModal(id){
@@ -35,4 +38,6 @@ function closeModal(id){
     modal.style.display = "none"
     canvas.style.display = "none"
     main.style.pointerEvents = "all"
+
+    document.body.classList.add('modal-open');
 }
