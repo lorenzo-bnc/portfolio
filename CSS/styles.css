@@ -304,6 +304,22 @@ strong.school {
     color: black
 }
 
+/* EXPERIENCES */
+
+img.experience{
+    width: 75%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a.sites {
+    font-size: 15px;
+    width: fit-content;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 50px;
+}
+
 /* COMPETENCES */
 
 div#competences {
@@ -385,6 +401,12 @@ body.modal-open {
     border-bottom: 1px solid var(--color-muted);
 }
 
+.title-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 button.close {
     display: flex;
     align-items: center;
@@ -446,7 +468,7 @@ button.close:hover {
     scrollbar-width: none;
 }
 .carousel > img {
-    width: 500px;
+    width: 50%;
     height: 250px;
 
     border: 1px solid;

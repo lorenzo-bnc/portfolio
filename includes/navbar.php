@@ -15,7 +15,7 @@
         </li>
         -->
         <li class="<?= $page_courante === 'experiences.php' ? 'active' : '' ?>">
-            <a href="experiences.php">Expériences</a>
+            <a href="experiences.php">Stages</a>
         </li>
 
         <li class="<?= $page_courante === 'competences.php' ? 'active' : '' ?>">
@@ -38,7 +38,7 @@
 
 <div id="mobile-nav" style="display: none;">
     <a href="index.php" class="mobile <?= $page_courante === 'index.php' ? 'active' : '' ?>">Accueil</a>
-    <a href="experiences.php" class="mobile <?= $page_courante === 'experiences.php' ? 'active' : '' ?>">Expériences</a>
+    <a href="experiences.php" class="mobile <?= $page_courante === 'experiences.php' ? 'active' : '' ?>">Stages</a>
     <a href="competences.php" class="mobile <?= $page_courante === 'competences.php' ? 'active' : '' ?>">Compétences</a>
     <a href="veille.php" class="mobile <?= $page_courante === 'veille.php' ? 'active' : '' ?>">Veille technologique</a>
     <a href="contact.php" class="mobile <?= $page_courante === 'contact.php' ? 'active' : '' ?>">Contact</a>
