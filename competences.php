@@ -162,8 +162,10 @@
 
             <?php // Carte ?>
             <h4>Carte interactive des participants</h4>
-            <img src="IMG/comp/C3/carte/carte.png" alt="Carte interactive affichant la répartition géographique des participants" class="only">
-
+            <a href="https://maplibre.org/maplibre-gl-js/docs/examples/display-a-map/">
+                <img src="IMG/comp/C3/carte/carte.png" alt="Carte interactive affichant la répartition géographique des participants" class="only">
+            </a>
+            
             <p>
                 Une carte interactive permet de visualiser la provenance géographique
                 des participants par ville ou par département.
@@ -265,7 +267,7 @@
         </div>
     </div>
 
-    <!-- MODAL 2 : C4 -->
+    <?php // C4 ?>
     <div class="modal" id="modal-2">
         <div class="head-modal">
             <h3>C4 - Travailler en mode projet</h3>
@@ -276,7 +278,6 @@
 
         <div class="modal-body">
             <h3>Participation au projet de développement de l’Espace Organisateur</h3>
-
             <p>
                 Durant mon stage chez KMS, j’ai participé à un projet de développement
                 visant à améliorer l’Espace Organisateur. Ce projet m’a permis de
@@ -285,29 +286,11 @@
                 organisation technique.
             </p>
 
-            <!-- Contexte -->
+            <?php // Contexte ?>
             <h4>Contexte et objectifs du projet</h4>
-
             <div class="carousel">
-                <img
-                    src="IMG/comp/C4/architecture-projet.png"
-                    alt="Vue générale de l'architecture du projet Espace Organisateur"
-                >
-
-                <img
-                    src="IMG/comp/C4/arborescence-projet.png"
-                    alt="Arborescence des fichiers du projet"
-                >
-
-                <img
-                    src="IMG/comp/C4/rapport-avancement.png"
-                    alt="Rapport présentant l'avancement du projet de développement"
-                >
-
-                <img
-                    src="IMG/comp/C4/kanban-projet.png"
-                    alt="Tableau de suivi des tâches du projet"
-                >
+                <img src="IMG/comp/C4/arborescence.png" alt="Vue générale de l'architecture du projet Espace Organisateur">
+                <img src="IMG/comp/C4/fonctions.png" alt="Segmentation des fonctions dans des librairies">
             </div>
 
             <p>
@@ -323,31 +306,8 @@
                 <li>Respecter la structure existante du projet.</li>
             </ul>
 
-            <!-- Analyse -->
+            <?php // Analyse ?>
             <h4>Analyse de l’existant</h4>
-
-            <div class="carousel">
-                <img
-                    src="IMG/comp/C4/lecture-code-existant.png"
-                    alt="Lecture du code existant avant l'ajout d'une fonctionnalité"
-                >
-
-                <img
-                    src="IMG/comp/C4/analyse-base-donnees.png"
-                    alt="Analyse des tables de la base de données du projet"
-                >
-
-                <img
-                    src="IMG/comp/C4/schema-base-donnees.png"
-                    alt="Schéma représentant les relations entre les tables de la base de données"
-                >
-
-                <img
-                    src="IMG/comp/C4/recherche-fonction-existante.png"
-                    alt="Recherche d'une fonction existante avant de créer une nouvelle fonction"
-                >
-            </div>
-
             <p>
                 Avant de développer une fonctionnalité, j’ai étudié le fonctionnement
                 existant de l’application afin d’identifier les fichiers, les fonctions
@@ -362,34 +322,11 @@
                 <li>Repérage des conventions utilisées dans le projet.</li>
             </ul>
 
-            <!-- Découpage -->
+            <?php // Découpage ?>
             <h4>Découpage du projet en modules</h4>
-
             <div class="carousel">
-                <img
-                    src="IMG/comp/C4/libesporgglobal.png"
-                    alt="Bibliothèque PHP contenant les fonctions globales du projet"
-                >
-
-                <img
-                    src="IMG/comp/C4/libesporgstats.png"
-                    alt="Bibliothèque PHP contenant les fonctions statistiques"
-                >
-
-                <img
-                    src="IMG/comp/C4/libesporgactions.png"
-                    alt="Bibliothèque PHP contenant les actions de création et de modification"
-                >
-
-                <img
-                    src="IMG/comp/C4/libesporgcommunication.png"
-                    alt="Bibliothèque PHP dédiée à la communication et aux notifications"
-                >
-
-                <img
-                    src="IMG/comp/C4/fichiers-javascript.png"
-                    alt="Organisation des fichiers JavaScript du projet"
-                >
+                <img src="IMG/comp/C4/libs.png" alt="Dossier contenant les bibliothèques PHP">
+                <img src="IMG/comp/C4/JS.png" alt="Organisation des fichiers JavaScript du projet">
             </div>
 
             <p>
@@ -399,19 +336,19 @@
 
             <ul>
                 <li>
-                    <strong>libesporgglobal.php :</strong>
+                    <strong>libEspOrg_global.php :</strong>
                     fonctions communes et fonctions de lecture.
                 </li>
                 <li>
-                    <strong>libesporgstats.php :</strong>
+                    <strong>libEspOrg_stats.php :</strong>
                     calcul et récupération des statistiques.
                 </li>
                 <li>
-                    <strong>libesporgactions.php :</strong>
+                    <strong>libEspOrg_actions.php :</strong>
                     actions de création et de modification.
                 </li>
                 <li>
-                    <strong>libesporgcommunication.php :</strong>
+                    <strong>libEspOrg_communication.php :</strong>
                     notifications et messagerie.
                 </li>
                 <li>
@@ -424,33 +361,17 @@
                 </li>
             </ul>
 
-            <!-- Développement -->
+            <?php // Développement ?>
             <h4>Développement des fonctionnalités</h4>
-
             <div class="carousel">
+                <img src="IMG/comp/C4/fonctions/EspOrgActions__Ajout_Course.png" alt="Fonction PHP permettant d'ajouter une course en base de données">
                 <img
-                    src="IMG/comp/C4/fonction-ajout-course.png"
-                    alt="Fonction PHP permettant d'ajouter une course en base de données"
-                >
-
-                <img
-                    src="IMG/comp/C4/fonction-maj-course.png"
+                    src="IMG/comp/C4/fonctions/EspOrgActions__MaJ_Infos_Course_1.png"
                     alt="Fonction PHP permettant de modifier les informations d'une course"
                 >
-
                 <img
-                    src="IMG/comp/C4/fonctions-statistiques.png"
+                    src="IMG/comp/C4/fonctions/EspOrgActions__MaJ_Infos_Course_2.png"
                     alt="Fonctions PHP utilisées pour calculer les statistiques"
-                >
-
-                <img
-                    src="IMG/comp/C4/fonctions-notifications.png"
-                    alt="Fonctions PHP permettant de générer les notifications"
-                >
-
-                <img
-                    src="IMG/comp/C4/code-javascript-dynamique.png"
-                    alt="Code JavaScript permettant d'afficher dynamiquement des champs de formulaire"
                 >
             </div>
 
@@ -460,60 +381,8 @@
                 et la gestion des participants.
             </p>
 
-            <!-- Formulaire multi-étapes -->
-            <h4>Développement du formulaire multi-étapes</h4>
-
-            <div class="carousel">
-                <img
-                    src="IMG/comp/C4/step1-presentation.png"
-                    alt="Étape de présentation du formulaire de création d'une course"
-                >
-
-                <img
-                    src="IMG/comp/C4/step2-inscriptions.png"
-                    alt="Étape de configuration des inscriptions d'une course"
-                >
-
-                <img
-                    src="IMG/comp/C4/step3-equipes.png"
-                    alt="Étape de configuration des équipes et des catégories"
-                >
-
-                <img
-                    src="IMG/comp/C4/step4-options-medicales.png"
-                    alt="Étape de configuration des options médicales"
-                >
-
-                <img
-                    src="IMG/comp/C4/step5-tarifs.png"
-                    alt="Étape de configuration des tarifs"
-                >
-
-                <img
-                    src="IMG/comp/C4/step6-extras.png"
-                    alt="Étape de configuration des extras"
-                >
-
-                <img
-                    src="IMG/comp/C4/step7-codes-promo.png"
-                    alt="Étape de configuration des codes promotionnels"
-                >
-            </div>
-
-            <p>
-                Le formulaire de création et de modification d’une course est organisé
-                en plusieurs étapes afin de simplifier la saisie des informations.
-            </p>
-
-            <p>
-                Des fonctions JavaScript ont été ajoutées pour afficher ou masquer
-                certaines zones du formulaire, ajouter des champs dynamiquement et
-                vérifier la cohérence des données saisies.
-            </p>
-
-            <!-- AJAX -->
+            <?php // AJAX ?>
             <h4>Communication entre le frontend et le backend</h4>
-
             <div class="carousel">
                 <img
                     src="IMG/comp/C4/appel-ajax-fetch.png"

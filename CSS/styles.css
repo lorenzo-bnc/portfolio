@@ -296,10 +296,6 @@ li.school {
     font-size: 14px;
 }
 
-strong {
-    color: var(--color-secondary);
-}
-
 strong.school {
     color: black
 }
