@@ -322,14 +322,6 @@ img.experience{
     margin-bottom: 10px;
 }
 
-a.sites {
-    font-size: 15px;
-    width: fit-content;
-    padding: 5px;
-    border: 1px solid;
-    border-radius: 50px;
-}
-
 /* COMPETENCES */
 
 div#competences {
@@ -534,6 +526,20 @@ p.company {
     scale: 1.08;
     background-color: #8400FF3c;
     transition: 0.5s;
+}
+
+div.action {
+    gap: 7px;
+    display: flex;
+}
+
+a.action, button.action {
+    padding: 5px;
+    background-color: #efefef;
+
+    border: 1px solid gainsboro;
+    border-radius: 15px;
+    font-size: 13px;
 }
 
 /* VEILLE */

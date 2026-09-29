@@ -42,8 +42,16 @@
         <div class="head-modal">
             <div class="title-modal">
                 <h3>C3 - Développer la présence en ligne de l’organisation</h3>
-                <a href="http://s140190424.onlinehome.fr/home.php" target="_blank" class="sites">Site d'exemple</a>
+                <div class="action">
+                    <a class="action" href="http://s140190424.onlinehome.fr/home.php" target="_blank">
+                        SITE EXEMPLE
+                    </a>
+                    <button class="action" onclick="openModal('e5')">
+                        GRILLE E5
+                    </button>
+                </div>
             </div>
+            
             <button class="close" onclick="closeModal(1)">×</button>
         </div>
 
@@ -272,7 +280,18 @@
     <?php // C4 ?>
     <div class="modal" id="modal-2">
         <div class="head-modal">
-            <h3>C4 - Travailler en mode projet</h3>
+            <div class="title-modal">
+                <h3>C4 - Travailler en mode projet</h3>
+                <div class="action">
+                    <a class="action" href="./DOC/RAPPORT.pdf" target="_blank">
+                        RAPPORT
+                    </a>
+                    <button class="action" onclick="openModal('e5')">
+                        GRILLE E5
+                    </button>
+                </div>
+            </div>
+
             <button class="close" onclick="closeModal(2)">
                 ×
             </button>
@@ -457,9 +476,6 @@
 
     <footer>
         <?php require_once("./includes/footer.php"); ?>
-        <button onclick="openModal('e5')">
-            GRILLE E5
-        </button>
     </footer>
 </body>
 </html>

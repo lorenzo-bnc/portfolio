@@ -1,5 +1,5 @@
 <?php
-    $recupJSON = json_decode(file_get_contents("https://newsdata.io/api/1/latest?apikey=pub_36dd2a8701094dd5935f8b8cf48d1b03&qInTitle=suno&country=fr,gb,us"), true);
+    $recupJSON = json_decode(file_get_contents("https://newsdata.io/api/1/latest?%20apikey=pub_36dd2a8701094dd5935f8b8cf48d1b03%20&q=suno%20AND%20music%20&country=fr,gb,us%20&language=fr,en&removeduplicate=1"), true);
     $articlesJournalier = $recupJSON["results"];
 
     $articlesFavoris = json_decode(file_get_contents('DB/fav_news.json'), true);
@@ -131,7 +131,7 @@
                                 </form>
                             </div>
 
-                            <img src="{$unFavori['image_url']}" alt="Image KMS" class="veille">
+                            <img src="{$unFavori['image_url']}" alt="Image article" class="veille">
                             <div class="footer-veille"git branch -M main>
                                 <p class="veille">{$description}</p>
                                 <hr>
@@ -170,7 +170,7 @@
                                     </form>
                                 </div>
 
-                                <img src="{$unArticle['image_url']}" alt="Image KMS" class="veille">
+                                <img src="{$unArticle['image_url']}" alt="Image article" class="veille">
                                 <div class="footer-veille">
                                     <p class="veille">{$description}</p>
                                     <hr>
