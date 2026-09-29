@@ -137,13 +137,15 @@
 
             <?php // Graphiques ?>
             <h4>Statistiques et graphiques</h4>
-            <div class="carousel">
-                <img src="IMG/comp/C3/graph/hf.png" alt="Graphique représentant la répartition des participants par sexe et par catégorie">
-                <img src="IMG/comp/C3/graph/inscrits_sem.png" alt="Graphique représentant l'évolution des inscriptions au fil des semaines">
-                <img src="IMG/comp/C3/graph/inscrits_dep.png" alt="Graphique représentant les inscriptions dans les différentes villes">
-                <img src="IMG/comp/C3/graph/promo.png" alt="Graphique représentant les utilisations des code promos">
-                <img src="IMG/comp/C3/graph/code_ville.png" alt="Code PHP contenant les fonctions de calcul des statistiques">
-            </div>
+            <a href="https://www.chartjs.org/docs/latest/charts/line.html" target="_blank">
+                <div class="carousel">
+                    <img src="IMG/comp/C3/graph/hf.png" alt="Graphique représentant la répartition des participants par sexe et par catégorie">
+                    <img src="IMG/comp/C3/graph/inscrits_sem.png" alt="Graphique représentant l'évolution des inscriptions au fil des semaines">
+                    <img src="IMG/comp/C3/graph/inscrits_dep.png" alt="Graphique représentant les inscriptions dans les différentes villes">
+                    <img src="IMG/comp/C3/graph/promo.png" alt="Graphique représentant les utilisations des code promos">
+                    <img src="IMG/comp/C3/graph/code_ville.png" alt="Code PHP contenant les fonctions de calcul des statistiques">
+                </div>
+            </a>
 
             <p>
                 Les statistiques sont récupérées depuis la base de données puis
@@ -162,7 +164,7 @@
 
             <?php // Carte ?>
             <h4>Carte interactive des participants</h4>
-            <a href="https://maplibre.org/maplibre-gl-js/docs/examples/display-a-map/">
+            <a href="https://maplibre.org/maplibre-gl-js/docs/examples/display-a-map/" target="_blank">
                 <img src="IMG/comp/C3/carte/carte.png" alt="Carte interactive affichant la répartition géographique des participants" class="only">
             </a>
             
@@ -384,25 +386,8 @@
             <?php // AJAX ?>
             <h4>Communication entre le frontend et le backend</h4>
             <div class="carousel">
-                <img
-                    src="IMG/comp/C4/appel-ajax-fetch.png"
-                    alt="Appel AJAX réalisé avec Fetch API depuis le frontend"
-                >
-
-                <img
-                    src="IMG/comp/C4/endpoint-php-json.png"
-                    alt="Endpoint PHP retournant une réponse au format JSON"
-                >
-
-                <img
-                    src="IMG/comp/C4/reponse-json-devtools.png"
-                    alt="Réponse JSON visible dans les outils de développement du navigateur"
-                >
-
-                <img
-                    src="IMG/comp/C4/onglet-network.png"
-                    alt="Requête AJAX visible dans l'onglet Network des outils de développement"
-                >
+                <img src="IMG/comp/C4/ajax/fetch.png" alt="Appel AJAX réalisé avec Fetch API depuis le frontend">
+                <img src="IMG/comp/C4/ajax/json.png" alt="Endpoint PHP retournant une réponse au format JSON">
             </div>
 
             <p>
@@ -411,80 +396,11 @@
                 qui sont ensuite utilisées par JavaScript pour mettre à jour la page.
             </p>
 
-            <!-- Tests -->
-            <h4>Tests et débogage</h4>
-
-            <div class="carousel">
-                <img
-                    src="IMG/comp/C4/test-formulaire.png"
-                    alt="Test du formulaire de création d'une course"
-                >
-
-                <img
-                    src="IMG/comp/C4/test-statistiques.png"
-                    alt="Test de l'affichage des statistiques d'un événement"
-                >
-
-                <img
-                    src="IMG/comp/C4/test-notifications.png"
-                    alt="Test de la génération et de l'affichage des notifications"
-                >
-
-                <img
-                    src="IMG/comp/C4erreur-console.png"
-                    alt="Erreur JavaScript identifiée dans la console du navigateur"
-                >
-
-                <img
-                    src="IMG/comp/C4/correction-erreur.png"
-                    alt="Correction du code après identification d'une erreur"
-                >
-
-                <img
-                    src="IMG/comp/C4/test-requete-sql.png"
-                    alt="Vérification du résultat d'une requête SQL"
-                >
-            </div>
-
-            <p>
-                Chaque fonctionnalité a été testée afin de vérifier son comportement
-                dans différentes situations et d’éviter les régressions sur les pages
-                déjà présentes dans l’application.
-            </p>
-
-            <ul>
-                <li>Tests des formulaires.</li>
-                <li>Tests des requêtes SQL.</li>
-                <li>Tests des réponses JSON.</li>
-                <li>Tests des appels AJAX.</li>
-                <li>Tests de l’affichage des données.</li>
-                <li>Correction des erreurs dans la console.</li>
-                <li>Vérification de la compatibilité avec l’existant.</li>
-            </ul>
-
-            <!-- Sécurité -->
+            <?php // Sécurité ?>
             <h4>Respect des règles de sécurité</h4>
-
             <div class="carousel">
-                <img
-                    src="IMG/comp/C4/requete-preparee-pdo.png"
-                    alt="Requête préparée avec PDO pour protéger la base de données"
-                >
-
-                <img
-                    src="IMG/comp/C4/verification-session.png"
-                    alt="Vérification de la session utilisateur avant l'accès à une fonctionnalité"
-                >
-
-                <img
-                    src="IMG/comp/C4/controle-role.png"
-                    alt="Contrôle du rôle de l'utilisateur avant une action sensible"
-                >
-
-                <img
-                    src="IMG/comp/C4/validation-upload.png"
-                    alt="Validation du type et de la taille d'un fichier envoyé sur le serveur"
-                >
+                <img src="IMG/comp/C4/secure/pdo.png" alt="Requête préparée avec PDO pour protéger la base de données">
+                <img src="IMG/comp/C4/secure/verifconnect.png" alt="Vérification de la session utilisateur avant l'accès à une fonctionnalité">
             </div>
 
             <p>
@@ -499,31 +415,6 @@
                 <li>Validation des fichiers envoyés.</li>
                 <li>Contrôle du type MIME et de la taille des images.</li>
             </ul>
-
-            <!-- Résultat -->
-            <h4>Résultat du travail réalisé</h4>
-
-            <div class="carousel">
-                <img
-                    src="IMG/comp/C4/resultat-final-dashboard.png"
-                    alt="Résultat final du tableau de bord de l'Espace Organisateur"
-                >
-
-                <img
-                    src="IMG/comp/C4/resultat-final-statistiques.png"
-                    alt="Résultat final du module de statistiques"
-                >
-
-                <img
-                    src="IMG/comp/C4/resultat-final-participants.png"
-                    alt="Résultat final de la liste des participants"
-                >
-
-                <img
-                    src="IMG/comp/C4/resultat-final-notifications.png"
-                    alt="Résultat final du système de notifications"
-                >
-            </div>
 
             <p>
                 Ce projet m’a permis de travailler dans un environnement professionnel,
@@ -566,6 +457,9 @@
 
     <footer>
         <?php require_once("./includes/footer.php"); ?>
+        <button onclick="openModal('e5')">
+            GRILLE E5
+        </button>
     </footer>
 </body>
 </html>
